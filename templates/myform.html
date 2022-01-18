@@ -1,0 +1,21 @@
+{% extends "import.html" %}
+
+{% block content %}
+
+<form action="/insertImage" method="post">
+    First Name - <input type="text" name="fname" id="fname">
+    Last Name - <input type="text" name="lname" id="lname">
+    Gmail - <input type="email" name="email" id="email">
+    Location -
+    <select name="loc" id="loc">
+        <option value="Agra"> Agra</option>
+        <option value="Mathura"> Mathura</option>
+        <option value="Firozabad"> Firozabad </option>
+    </select>
+    <input type="submit" value="Submit">
+</form>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "import.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="sub-container" style="display: block; padding: 20px;">
+<!--        <img src="{{ url_for('static', filename='image/Picture1_covid.png') }}" alt="">-->
+        <p class="name" style="font-size:40px;">According to our COVID-19 Model </p>
+        <h2>Positive Covid - {{ covid_positive*100 }} %</h2>
+        <h2>Negative Covid - {{ covid_negative*100 }}</h2>
+        <p class="name" style="font-size: 50px;">{{ d[1] }} | You are {{ result }}</p>
+        <form action="/">
+        <input type="submit" value="Want to Make another prediction">
+        </form>
+    </div>
+
+</div>
+
+{% endblock %}
